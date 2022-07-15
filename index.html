@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tela Inicial</title>
+</head>
+<body id="body">
+    <div id="opacidade">
+        <header id="header">
+            <div id="headerText">
+                <h1 class="title">Bem-vindo ao sistema do AID</h1>
+                <p class="subTitle">Informe os seus dados para acessar o sistema</p>
+            </div>
+            <div id="pageDesign">
+                <div class="circle"></div>
+                <div class="square"></div>
+            </div>
+        </header>
+        <main id="main">
+            <div id="entradaBox">
+                <img id="logo-aid" src="logo.png" alt="logo do aid">
+                <h1 class="boxTitle">AUTENTICAÇÃO</h1>
+                <div id="msgErro"></div>
+                <div id="form" method="post">
+                    <input id="username" placeholder="Login" class="input" type="text">
+                    <input id="password" placeholder="Senha" class="input" type="password">
+                    <button class="button" onclick="loginRequest()">Entrar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

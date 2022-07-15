@@ -1,0 +1,111 @@
+
+  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+<link rel="stylesheet" href="CSS/style2.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="JS/jquery.mask.min.js"></script>
+<script src="/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#CPF").mask("000.000.000-00")
+      })
+</script>
+</head>
+<body>
+        <main>
+            <div class="box">
+                <div>
+                    <fieldset>
+                        <legend><b>Fórmulário de Cadastro do Extensionista</b></legend>
+                        <br>
+            
+                        <div class="inputBox">
+                            <input type="text" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome completo</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">Email</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="CPF" class="inputUser" required>
+                            <label for="CPF" class="labelInput">CPF</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="number" id="RGM" class="inputUser" required>
+                            <label for="RGM" class="labelInput">RGM</label>
+            
+                        </div>
+                        <br>
+                        <div>
+                        <label class="Neg" name="equipe" id="equipe">Equipe de Trabalho</label>
+                        <select  id="EquipeSelect" class="inputUser">
+                            <option selected disabled value="" >Selecione</option>            
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="Neg" nome="nivelexp">Nível de Experiência</label>
+                        <select  id="nivelexp" class="inputUser">
+                            <option selected disabled value="">Selecione</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+            
+                    <br>
+                    <br>
+            
+                    <div class="inputBox">
+                        <input type="text" name="txtexp" id="txtexp"  class="inputUser" required>
+                        <label class="labelInput">Seu conhecimento sobre a área escolhida:</label>
+                    </div>
+                    <br>
+                    <p class="Neg">Você é um Estagiário?</p>
+                    <input type="checkbox" id="estagiario">
+                    <label for="estagiario">Sim</label><br>
+                    <p class="Neg">Você é um Monitor?</p>
+                    <input type="checkbox" id="monitor">
+                    <label for="monitor" class="">Sim</label><br>
+                    <br>
+                    <p class="Neg">Dias da semana:</p>
+                    <form>
+                        <input type="checkbox" id="seg">
+                        <label for="Segunda-Feira"> Segunda-Feira</label><br>
+                        <input type="checkbox" id="ter">
+                        <label for="Terça-Feira">Terça-Feira</label><br>
+                        <input type="checkbox" id="qua">
+                        <label for="Quarta-Feira">Quarta-Feira</label><br>
+                        <input type="checkbox" id="qui">
+                        <label for="Quinta-Feira">Quinta-Feira</label><br>
+                        <input type="checkbox" id="sex">
+                        <label for="Sexta-Feira">Sexta-Feira</label><br>
+                        <input type="checkbox" id="sab">
+                        <label for="Sábado">Sábado</label><br><br>
+                        <input type="submit" value="Enviar" id="submit" onclick="cadPessoa()">
+                      </form>
+                        <br><br>
+                    </fieldset>
+                </div>
+            </div>
+    
+        </main>
+    
+
+ 
+            <img src="happy-college-student-in-eyeglasses-with-backpack-2022-06-14-17-33-23-utc (4).png" width="1550px"  id="Aluno">
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="JS/jquery.mask.min.js"></script>
+<script src="/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#CPF").mask("000.000.000-00")
+      });
+</script>
+</head>
+<body>
+        <main id="main1">
+            <div class="box">
+                <form>
+                    <fieldset>
+                        <legend><b>Fórmulário de Cadastro do Solicitante de Doação</b></legend>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome</label>
+                        <br><br><br>
+                        <div class="inputBox">
+                            <input type="date" id="data_nasc" class="inputUser" required>
+                            <label for="data_nasc" class="labelData">Data de Nascimento</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">Email</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="cpf" class="inputUser" required>
+                            <label for="cpf" class="labelInput">CPF</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="rg" class="inputUser" required>
+                            <label for="rg" class="labelInput">RG</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="emissor" class="inputUser" required>
+                            <label for="emissor" class="labelInput">Orgão Emissor</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="uf" class="inputUser" required>
+                            <label for="uf" class="labelInput">UF</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="nacion" class="inputUser" required>
+                            <label for="nacion" class="labelInput">Nacionalidade</label>
+            
+                        </div>
+                        <br><br>
+                        <div>
+                            <label class="Neg">Sexo</label>
+                            <select  id="sexo" class="inputUser2">
+                            <option value="N/A" >Prefiro não opinar</option>
+                            <option value="F" >Solteiro(a)</option>
+                            <option value="M" >Casado(a)</option>
+                        </select>
+                        </div>
+                        <br><br>
+                        <div>
+                            <label class="Neg">Estado civil</label>
+                            <select  id="estado_civil" class="inputUser2">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="separado">Separado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="end" class="inputUser" required>
+                            <label for="end" class="labelInput">Endereço</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="numero" class="inputUser" required>
+                            <label for="numero" class="labelInput">Nº</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="complemento" class="inputUser" required>
+                            <label for="complemento" class="labelInput">Complemento</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="cidade" class="inputUser" required>
+                            <label for="cidade" class="labelInput">Cidade</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="bairro" class="inputUser" required>
+                            <label for="bairo" class="labelInput">Bairro</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="cep" class="inputUser" required>
+                            <label for="cep" class="labelInput">CEP</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="tel" class="inputUser" required>
+                            <label for="tel" class="labelInput">Telefone</label>
+                        </div>
+                        <br><br>
+                        <div>
+                            <label class="Neg" nome="estudante">Estudante?</label>
+                            <select  id="estudante" class="inputUser2">
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        </div>
+                        <p class="Neg">Estuda no Unipê?</p>
+                        <input type="checkbox" id="estuda_unipe">
+                        <label for="estuda_unipe">Sim</label><br>
+                        <br>
+                        <br>
+                        <div class="inputBox">
+                            <input type="text" id="curso_unipe" class="inputUser" required>
+                            <label for="curso_unipe" class="labelInput">Curso</label>
+                        </div>
+                        <p class="Neg">Trabalha?</p>
+                        <input type="checkbox" id="trabalhador">
+                        <label for="trabalhador">Sim</label><br>
+                        <br>
+                        <div class="inputBox">
+                            <input type="text" id="local_trabalho" class="inputUser" required>
+                            <label for="local_trabalho" class="labelInput">Nome da empresa</label>
+                        </div>
+                        <p class="Neg">Funcionário Unipê?</p>
+                        <input type="checkbox" id="is_funcionario_unipe">
+                        <label for="is_funcionario_unipe">Sim</label><br>
+                        <br>
+                        <div>
+                            <label class="Neg">Tamanho da família</label>
+                            <select  id="qtd_pessoas_familia" class="inputUser2">
+                            <option value="1">Uma</option>
+                            <option value="2">Duas</option>
+                            <option value="3">Três</option>
+                            <option value="4">Quatro</option>
+                            <option value="5">Cinco</option>
+                            <option value="6">Seis</option>
+                            <option value="7">Sete</option>
+                            <option value="8">Oito</option>
+                            <option value="9">Nove</option>
+                            <option value="10">Dez</option>
+                        </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label class="Neg">Quantos filhos?</label>
+                            <select  id="qtd_filhos" class="inputUser2">
+                            <option value="0">Nenhum</option>
+                            <option value="1">Um</option>
+                            <option value="2">Dois</option>
+                            <option value="3">Três</option>
+                            <option value="4">Quatro ou mais</option>
+                        </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label class="Neg">Renda familiar</label>
+                            <select  id="renda" class="inputUser2">
+                            <option value="renda1">Menos de R$ 1045</option>
+                            <option value="renda2">De R$ 1045 até R$ 2090</option>
+                            <option value="renda3">Acima de R$ 2090</option>
+                        </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label class="Neg" for="indica_unipe">O quanto você indicaria o AID para um conhecido?</label>
+                            <select  id="indica_unipe" class="inputUser2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        </div>
+                        <br><br>
+                        <input type="submit" value="Enviar" id="submit" onclick="cadDonatario()">
+                    <br>
+                    </fieldset>
+                </form>
+            </div> 
+        </main>
+</body>
+</html>

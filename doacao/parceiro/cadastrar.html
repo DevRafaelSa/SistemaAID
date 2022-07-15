@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Doação</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <form>
+                    <fieldset>
+                        <legend><b>Registro de Doação do Parceiro</b></legend>
+                        <br><br>
+                        <div>
+                        <label class="Neg" name="donatario" id="parceiro">Parceiro doador</label>
+                        <select  id="ParceiroSelect" class="inputUser">
+                            <option selected disabled value="">Selecione</option>
+                        </select>
+                        </div>
+                            <br><br>
+                                <div class="inputBox">
+                                    <textarea name="txtexp" id="descricao" cols="30" rows="10" class="inputUser"  required></textarea>
+                                    <label class="labelInput">Descrição</label>
+                                </div>
+                                <br><br><br><br><br><br><br>
+                                <input type="submit" value="Enviar" id="submit" onclick="cadDoacaoParceiro()">
+                    </fieldset>
+            </form>
+        </div>
+
+       
+    </main>
+    <img src="alunos-com-laptop-medio-tiro_23-2148950530-removebg-preview.png" alt="" id="imagem">
+</body>
+</html>

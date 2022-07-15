@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+<link rel="stylesheet" href="CSS/style2.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="JS/jquery.mask.min.js"></script>
+<script src="/script.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#CPF").mask("000.000.000-00")
+      })
+</script>
+</head>
+<body>
+        <main>
+            <div class="box">
+                <div>
+                    <fieldset>
+                        <legend><b>Fórmulário de Cadastro do Parceiro Doador</b></legend>
+                        <p class="Neg">Pessoa Jurídica?</p>
+                        <input type="checkbox" id="pjuridica">
+                        <label for="pjuridica">Sim</label>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome/Razão Social</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="cpf" class="inputUser" required>
+                            <label for="cpf" class="labelInput">CPF</label>
+                            <br><br>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" id="cnpj" class="inputUser" required>
+                            <label for="cnpj" class="labelInput">CNPJ</label>
+                            <br><br>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" id="resp" class="inputUser" required>
+                            <label for="resp" class="labelInput">Responsável</label>
+                            <br><br>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" id="cep" class="inputUser" required>
+                            <label for="cep" class="labelInput">CEP</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="end" class="inputUser" required>
+                            <label for="end" class="labelInput">Endereço</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="num" class="inputUser" required>
+                            <label for="num" class="labelInput">Nº</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="comp" class="inputUser" required>
+                            <label for="comp" class="labelInput">Complemento</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="bairro" class="inputUser" required>
+                            <label for="bairro" class="labelInput">Bairro</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="cidade" class="inputUser" required>
+                            <label for="cidade" class="labelInput">Cidade</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" id="uf" class="inputUser" required>
+                            <label for="uf" class="labelInput">UF</label>
+            
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="number" id="tel" class="inputUser" required>
+                            <label for="tel" class="labelInput">Telefone</label>
+            
+                        </div>
+                        <br><br>
+                        <input type="submit" value="Enviar" id="submit" onclick="cadParceiro()">
+                    <br>
+                    </fieldset>
+                </div>
+            </div>    
+        </main>
+
+        <img src="/parceiros/parceiro.png" width="800px"  id="Parceiro">
+</body>
+</html>
