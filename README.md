@@ -5,4 +5,5 @@ Projeto desenvolvido em Python;
 Sistema em Rest API;
 
 Metodologia Ágil: Scrum, Kanban e XP;
+
 Planning Poker para estimar story points.
