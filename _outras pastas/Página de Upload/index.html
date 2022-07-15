@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inventário</title>
+  </head>
+  <body id="body">
+    <div id="sendDiv">
+      <header id="header">
+        <h1 class="title">Novo Usuário</h1>
+      </header>
+      <main id="main">
+        <div id="excelDiv">
+        </div>
+        <img id="excelImage" src="upload.png">
+        <form id="form">
+          <div id="formBox">
+            <h1 id="formTitle">Importar Arquivo XLSX</h1>
+            <p id="formFileName"></p>
+            <label id="formLabel" for="formInput">Upload</label>
+            <input
+              id="formInput"
+              type="file"
+              accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            />
+          </div>
+          <button id="formButton" type="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
